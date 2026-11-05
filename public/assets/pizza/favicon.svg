@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180">
+<title>Luigi’s Pizza maker tossing dough</title>
+<g fill="white" stroke="#176b4c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+<!-- Floating, hand-stretched pizza dough and its motion marks. -->
+<path d="M135 27c12-10 22 5 36 3 17-2 22-17 34-12 18 9-5 25-27 23-20-2-45 0-43-14Z"/>
+<path d="M145 29c12 2 26 8 43 3" fill="none" stroke-width="2.5"/>
+<path d="m126 20-3 6 1 6m89-17 3 7-1 6" fill="none" stroke-width="2.5"/>
+<!-- Reaching sleeve, hand, and raised index finger. -->
+<path d="M111 119c21 5 34-11 42-27l20 8c-1 30-19 51-47 58"/>
+<path d="m153 92-4-17c-1-6-11-13-8-17 4-4 11 4 15 9l1-23c1-7 8-6 9 0l-1 23c2-10 9-10 10-1 4-10 11-7 10 2 7-4 11 2 7 10l-16 20Z"/>
+<path d="m155 85 22 8m-13-22 2 6m8-10 0 8m9-6-2 7" fill="none" stroke-width="2.5"/>
+<!-- Profile, soft nose, smile and a curled moustache. -->
+<path d="M39 91c-10-24 1-50 26-54 27-4 43 16 44 37l9 9c14-5 24-1 22 7-2 9-17 12-26 12l4 21c-6 15-21 24-44 23-20-2-32-21-35-39"/>
+<path d="M42 93c-18-14-30 2-21 15 6 8 15 5 20 0"/>
+<path d="M47 106c7-3 14 1 20 3 8-12 17-10 24-8 9 4 16 1 21-4 1 16-13 21-25 14-10 9-24 7-28 1" fill="#176b4c" stroke-width="2"/>
+<path d="M80 126q9 10 19 0M92 75q5-4 10 1" fill="none" stroke-width="3"/>
+<ellipse cx="100" cy="83" rx="2.5" ry="4" fill="#176b4c" stroke="none"/>
+<!-- Tilted pizzaiolo cap, with a small basil leaf. -->
+<path d="M31 79C24 55 37 31 64 28c18-2 30 5 39 17-22 16-44 29-72 34Z"/>
+<path d="M31 79c25-12 49-28 70-50 11-13 16-17 22-11 9 13-8 33-22 39-19 12-42 21-70 22Z" fill="#176b4c"/>
+<path d="M54 47c-4-14 13-15 16-14-1 12-9 17-16 14Z" fill="#176b4c" stroke="none"/>
+<!-- Neckerchief and jacket. -->
+<path d="m51 137-14 19 33 12 20-20m-20 20 9-14 13 18 11-27"/>
+<path d="M33 174h93" fill="none" stroke-width="3"/>
+</g></svg>

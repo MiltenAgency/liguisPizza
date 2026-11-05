@@ -1,0 +1,251 @@
+/* Pizza kitchen palette. Layout and motion remain in the shared stylesheets. */
+:root {
+  --cream: #fff3df;
+  --brown: #7a261d;
+  --pink: #efb090;
+  --lavender: #d9dfb5;
+  --blue: #ead7b7;
+  --lime: #d7df9d;
+  --yellow: #f4c75c;
+  --orange: #c83f29;
+  --tomato: #b93222;
+  --basil: #405837;
+}
+body {
+  background: var(--cream);
+}
+h1,
+.section-heading h2 {
+  color: var(--tomato);
+}
+.brand-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.brand-mark img {
+  width: 100%;
+}
+.brand-mark small {
+  font:
+    800 9px/1.2 "DM Sans",
+    sans-serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+.logo {
+  width: 165px;
+}
+.button {
+  background: var(--tomato);
+  color: var(--cream);
+}
+.button:hover {
+  background: var(--basil);
+  color: var(--cream);
+}
+.product-card-info .button {
+  background: var(--cream);
+  color: var(--brown);
+}
+.product-card-info .button:hover {
+  background: var(--tomato);
+  color: var(--cream);
+}
+.marquee.pink {
+  background: var(--tomato);
+  color: var(--cream);
+}
+.marquee.orange {
+  background: var(--basil);
+  color: var(--cream);
+}
+.marquee.yellow {
+  background: var(--yellow);
+  color: var(--brown);
+}
+.marquee.lime,
+.sweet-cta > .marquee {
+  background: var(--lime);
+  color: var(--brown);
+}
+.hero-home .hero-food {
+  filter: drop-shadow(0 24px 20px #55230c18);
+}
+.category-image,
+.category-filters img {
+  object-fit: contain;
+}
+.category-position-0 .category-image {
+  filter: drop-shadow(0 22px 15px #55230c15);
+}
+.category-caption .category-thumb {
+  background: var(--cream);
+  object-fit: contain;
+}
+.product-image img {
+  object-fit: contain;
+}
+.quality-support {
+  background: var(--yellow);
+}
+.support-ticket {
+  background: var(--tomato);
+  color: var(--cream);
+}
+.support-ticket .support-flower {
+  filter: brightness(0) invert(1);
+}
+.support-ticket strong {
+  font-size: 45px;
+}
+.quality-support > img:not(.striped-ticket) {
+  width: 210px;
+}
+.quality-message {
+  color: var(--brown);
+}
+.cta-portrait {
+  object-position: center;
+}
+.cta-mini > img {
+  object-fit: contain;
+  background: var(--cream);
+}
+.contact-scene .cutout {
+  object-fit: contain;
+}
+.contact-form-photo > img {
+  object-position: center;
+}
+.stats-list > div {
+  color: var(--brown);
+}
+.gallery figcaption {
+  background: var(--cream);
+}
+.gallery-heart {
+  color: var(--tomato);
+}
+.baked-ticker {
+  color: var(--tomato);
+}
+footer {
+  background: var(--basil);
+  color: var(--cream);
+}
+.footer-brand .brand-mark > img {
+  filter: brightness(0) invert(1);
+}
+.footer-links a:hover,
+.footer-bottom a:hover {
+  color: var(--yellow);
+}
+.newsletter > div {
+  background: var(--cream);
+  color: var(--brown);
+}
+.newsletter input {
+  color: var(--brown);
+}
+.newsletter input::placeholder {
+  color: #7a261d99;
+}
+.newsletter button {
+  color: var(--brown);
+}
+.footer-bottom {
+  border-color: #fff3df44;
+}
+.socials a {
+  background: var(--cream);
+  color: var(--brown);
+}
+.pizza-404-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(950px, 100%);
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: 1;
+}
+.pizza-404-art > span {
+  font: 220px/1.1 var(--heading);
+  color: var(--tomato);
+}
+.pizza-404-art > img {
+  width: 360px;
+  height: 360px;
+  object-fit: contain;
+  margin-inline: -25px;
+  rotate: -12deg;
+}
+@media (max-width: 1199px) {
+  .pizza-404-art > span {
+    font-size: 170px;
+  }
+  .pizza-404-art > img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 809px) {
+  .logo {
+    width: 145px;
+  }
+  .brand-mark small {
+    font-size: 8px;
+  }
+  .pizza-404-art > span {
+    font-size: 110px;
+  }
+  .pizza-404-art > img {
+    width: 220px;
+    height: 220px;
+    margin-inline: -15px;
+  }
+  .why-statement h2 > .why-line:first-child,
+  .why-last > .why-line:last-child {
+    text-align: center;
+  }
+  .stat-sticker.lime {
+    min-width: 0;
+  }
+}
+@media (max-width: 540px) {
+  .pizza-404-art > span {
+    font-size: 78px;
+  }
+  .pizza-404-art > img {
+    width: 150px;
+    height: 170px;
+    margin-inline: -10px;
+  }
+  .support-ticket strong {
+    font-size: 35px;
+  }
+  .quality-support > img:not(.striped-ticket) {
+    width: 130px;
+  }
+  .hero-home .hero-food {
+    width: 380px;
+    height: 380px;
+    top: 255px;
+  }
+  .hero-menu h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 359px) {
+  .hero-home .hero-food {
+    width: 330px;
+    height: 350px;
+  }
+  .hero-menu h1 {
+    font-size: 32px;
+  }
+}

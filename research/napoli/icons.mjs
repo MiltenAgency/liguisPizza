@@ -1,0 +1,5 @@
+import {chromium} from '@playwright/test';
+const b=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']}); const p=await b.newPage({viewport:{width:1000,height:1500}}); const urls=new Set();
+for(const route of ['/','/about','/contact','/menu','/team']) {await p.goto('http://127.0.0.1:5173'+route); for(const u of await p.locator('img').evaluateAll(xs=>xs.map(x=>x.src).filter(x=>x.endsWith('.svg')))) urls.add(u);}
+await p.setContent(`<style>body{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;font:9px Arial;background:#eee}figure{margin:0;text-align:center;overflow:hidden;padding:10px;background:white}img{width:100px;height:100px;object-fit:contain}figcaption{overflow-wrap:anywhere}</style>`+[...urls].map((u,i)=>`<figure><img src="${u}"><figcaption>${i}: ${u.split('/').at(-1)}</figcaption></figure>`).join(''));
+await p.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>{})))); await p.screenshot({path:'research/napoli/icons.png',fullPage:true}); await b.close();

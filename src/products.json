@@ -1,0 +1,459 @@
+[
+  {
+    "slug": "margherita",
+    "legacySlug": "berry-bliss",
+    "name": "Margherita",
+    "category": "pizzas",
+    "categories": [
+      "pizzas"
+    ],
+    "description": "A timeless favorite: tomato sauce, creamy mozzarella, fresh basil, and a golden wood-fired crust.",
+    "minutes": 15,
+    "ingredient": "Tomato, mozzarella & basil",
+    "reviews": 98,
+    "price": 12.5,
+    "image": "pizza/margherita.png",
+    "color": "#dff2fc",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "A timeless favorite: tomato sauce, creamy mozzarella, fresh basil, and a golden wood-fired crust."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT YOUR PIZZA NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "pepperoni",
+    "legacySlug": "choco-ring",
+    "name": "Pepperoni",
+    "category": "pizzas",
+    "categories": [
+      "pizzas"
+    ],
+    "description": "Crisp-edged pepperoni, bubbling mozzarella, and rich tomato sauce on our hand-stretched dough.",
+    "minutes": 15,
+    "ingredient": "Pepperoni & mozzarella",
+    "reviews": 95,
+    "price": 15,
+    "image": "pizza/pepperoni.png",
+    "color": "#fbe4df",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Crisp-edged pepperoni, bubbling mozzarella, and rich tomato sauce on our hand-stretched dough."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT YOUR PIZZA NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "classic-burger",
+    "name": "Classic Burger",
+    "category": "burgers",
+    "categories": [
+      "burgers"
+    ],
+    "description": "A juicy grilled beef patty, melted cheddar, crisp lettuce, tomato, pickles, and house sauce in a toasted sesame bun.",
+    "minutes": 15,
+    "ingredient": "Beef, cheddar & house sauce",
+    "reviews": 96,
+    "price": 11.5,
+    "image": "pizza/classic-burger.png",
+    "color": "#e4f0e7",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "A juicy grilled beef patty, melted cheddar, crisp lettuce, tomato, pickles, and house sauce in a toasted sesame bun."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT A BURGER NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "garden-pizza",
+    "legacySlug": "blueberry-muffin",
+    "name": "Garden Pizza",
+    "category": "pizzas",
+    "categories": [
+      "pizzas"
+    ],
+    "description": "Roasted mushrooms, sweet peppers, black olives, and basil over mozzarella and tomato sauce.",
+    "minutes": 15,
+    "ingredient": "Mushrooms, peppers & olives",
+    "reviews": 94,
+    "price": 14,
+    "image": "pizza/garden.png",
+    "color": "#fff0c7",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Roasted mushrooms, sweet peppers, black olives, and basil over mozzarella and tomato sauce."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT YOUR PIZZA NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "crispy-chicken",
+    "name": "Crispy Chicken",
+    "category": "burgers",
+    "categories": [
+      "burgers"
+    ],
+    "description": "Crunchy golden chicken, crisp lettuce, tomato, and creamy house sauce in a soft toasted brioche bun.",
+    "minutes": 15,
+    "ingredient": "Crispy chicken & house sauce",
+    "reviews": 90,
+    "price": 12,
+    "image": "pizza/chicken-burger.png",
+    "color": "#dff2fc",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Crunchy golden chicken, crisp lettuce, tomato, and creamy house sauce in a soft toasted brioche bun."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT A BURGER NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "garlic-bread",
+    "legacySlug": "choco-nap",
+    "name": "Garlic Bread",
+    "category": "sides",
+    "categories": [
+      "sides"
+    ],
+    "description": "Golden oven-baked bread with fragrant garlic butter, parsley, and a light mozzarella finish.",
+    "minutes": 8,
+    "ingredient": "Garlic butter & parsley",
+    "reviews": 92,
+    "price": 5.5,
+    "image": "pizza/garlic-bread.png",
+    "color": "#fbe4df",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Golden oven-baked bread with fragrant garlic butter, parsley, and a light mozzarella finish."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT YOUR PIZZA NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "napoli-burger",
+    "name": "Napoli Burger",
+    "category": "burgers",
+    "categories": [
+      "burgers"
+    ],
+    "description": "Our classic cheeseburger with a Naples-inspired basil sauce, juicy beef, cheddar, lettuce, and tomato.",
+    "minutes": 15,
+    "ingredient": "Beef, cheddar & basil sauce",
+    "reviews": 93,
+    "price": 13,
+    "image": "pizza/napoli-burger.png",
+    "color": "#e4f0e7",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Our classic cheeseburger with a Naples-inspired basil sauce, juicy beef, cheddar, lettuce, and tomato."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT A BURGER NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "cheesy-garlic-bread",
+    "legacySlug": "strawberry-tart",
+    "name": "Cheesy Garlic Bread",
+    "category": "sides",
+    "categories": [
+      "sides"
+    ],
+    "description": "Our garlic bread with a generous layer of melted mozzarella. Pull apart, pass around, and enjoy.",
+    "minutes": 8,
+    "ingredient": "Mozzarella & garlic",
+    "reviews": 98,
+    "price": 6.5,
+    "image": "pizza/garlic-bread.png",
+    "color": "#fff0c7",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Our garlic bread with a generous layer of melted mozzarella. Pull apart, pass around, and enjoy."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT YOUR PIZZA NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "spicy-chicken",
+    "name": "Spicy Chicken",
+    "category": "burgers",
+    "categories": [
+      "burgers"
+    ],
+    "description": "Golden crispy chicken, fresh lettuce, tomato, and a lively chili sauce tucked into a toasted brioche bun.",
+    "minutes": 15,
+    "ingredient": "Crispy chicken & chili sauce",
+    "reviews": 97,
+    "price": 12.5,
+    "image": "pizza/spicy-chicken.png",
+    "color": "#dff2fc",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Golden crispy chicken, fresh lettuce, tomato, and a lively chili sauce tucked into a toasted brioche bun."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT A BURGER NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "cheese-pizza",
+    "legacySlug": "strawberry-cake",
+    "name": "Cheese Pizza",
+    "category": "pizzas",
+    "categories": [
+      "pizzas"
+    ],
+    "description": "A generous blanket of mozzarella on our tomato base, finished with basil and a beautifully blistered crust.",
+    "minutes": 15,
+    "ingredient": "Mozzarella & basil",
+    "reviews": 96,
+    "price": 13,
+    "image": "pizza/margherita.png",
+    "color": "#fbe4df",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "A generous blanket of mozzarella on our tomato base, finished with basil and a beautifully blistered crust."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT YOUR PIZZA NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  },
+  {
+    "slug": "house-cheeseburger",
+    "name": "House Cheeseburger",
+    "category": "burgers",
+    "categories": [
+      "burgers"
+    ],
+    "description": "Grilled beef, melting cheddar, fresh vegetables, pickles, and our extra-cheesy house sauce in a sesame bun.",
+    "minutes": 15,
+    "ingredient": "Beef, cheddar & cheese sauce",
+    "reviews": 93,
+    "price": 12.5,
+    "image": "pizza/house-cheeseburger.png",
+    "color": "#e4f0e7",
+    "article": [
+      {
+        "type": "heading",
+        "text": "GOOD INGREDIENTS. GREAT FLAVOR."
+      },
+      {
+        "type": "paragraph",
+        "text": "Grilled beef, melting cheddar, fresh vegetables, pickles, and our extra-cheesy house sauce in a sesame bun."
+      },
+      {
+        "type": "heading",
+        "text": "MAKE IT A BURGER NIGHT"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pair your order with a fresh pizza or burger and a side to share. Use Order now to send an enquiry to our kitchen. In this local preview, no order is placed and no payment is taken."
+      },
+      {
+        "type": "heading",
+        "text": "A NOTE BEFORE YOU ORDER"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask the kitchen about ingredients, allergens, and any changes you would like. Preparation times and menu prices are sample values for this local website; the team would confirm availability and timing for a real order."
+      }
+    ]
+  }
+]

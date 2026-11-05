@@ -1,0 +1,26 @@
+[
+  {
+    "file": "public/assets/pizza/oven.jpg",
+    "source": "https://unsplash.com/photos/pizza-being-removed-from-a-wood-fired-oven-zyvkmq1yJBs",
+    "image": "https://images.unsplash.com/photo-1754799565084-b381bd0b4db7?auto=format&fit=crop&w=1400&q=85&fm=jpg",
+    "sha256": "77079542d8f8109d93c343f2673d6fa269bfbb885c20a2220e323e7d95d242fb"
+  },
+  {
+    "file": "public/assets/pizza/pizza-table.jpg",
+    "source": "https://unsplash.com/photos/a-table-topped-with-pizzas-next-to-an-oven-pjCS7wtjJXQ",
+    "image": "https://images.unsplash.com/photo-1694444398429-e37d74b13288?auto=format&fit=crop&w=1400&q=85&fm=jpg",
+    "sha256": "82b2c63b5c1eba7363a9bb4a3f339ca05a0ba095636ef2deed4384eac45f8e5f"
+  },
+  {
+    "file": "public/assets/pizza/pizza-chef.jpg",
+    "source": "https://unsplash.com/photos/person-holding-white-and-brown-pizza-J-Y1kMFVNvI",
+    "image": "https://images.unsplash.com/photo-1597075349517-0deb1e127c37?auto=format&fit=crop&w=1400&q=85&fm=jpg",
+    "sha256": "973ed455b2cca269f3422ecaf06619dd544bc4d2c7c6689d784029cd7350e1d9"
+  },
+  {
+    "file": "public/assets/pizza/pizza-garden.jpg",
+    "source": "https://unsplash.com/photos/a-delicious-pizza-loaded-with-toppings-Cqg9B-JRteI",
+    "image": "https://images.unsplash.com/photo-1743615357618-de4ac111c79c?auto=format&fit=crop&w=1400&q=85&fm=jpg",
+    "sha256": "0812b778ae9407afca2f6a65ef1b1ce03b6071906ea0e61d25d052d3ec5e4225"
+  }
+]

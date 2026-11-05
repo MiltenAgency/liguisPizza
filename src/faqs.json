@@ -1,0 +1,22 @@
+[
+  {
+    "question": "HOW CAN I PLACE AN ORDER?",
+    "answer": "Choose a pizza, burger, or side from the menu and select Order now to open an enquiry with the item filled in. This local preview does not place orders, take payments, or send messages."
+  },
+  {
+    "question": "HOW LONG DOES IT TAKE TO PREPARE A PIZZA?",
+    "answer": "Each pizza is prepared to order. The menu shows sample preparation times; the kitchen would confirm your collection or delivery time when accepting an order."
+  },
+  {
+    "question": "DO YOU HAVE VEGETARIAN OPTIONS?",
+    "answer": "Yes. The sample menu includes Margherita, Garden Pizza, and Cheese Pizza. Ask the kitchen to confirm the ingredients and preparation before placing a real order."
+  },
+  {
+    "question": "CAN I CHANGE MY TOPPINGS?",
+    "answer": "Tell us which toppings you would like to add or leave off in your order enquiry. The kitchen would confirm availability and any price changes."
+  },
+  {
+    "question": "WHAT ABOUT ALLERGENS AND GROUP ORDERS?",
+    "answer": "For ingredient, allergen, or large-order questions, contact the kitchen before ordering. This preview cannot confirm allergy suitability or reserve a collection time."
+  }
+]

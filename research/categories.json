@@ -1,0 +1,25 @@
+{
+  "cakes": [
+    "All",
+    "Drinks",
+    "Pastries",
+    "Cakes",
+    "Berry Bliss",
+    "Choco Ring",
+    "Blueberry Muffin",
+    "Strawberry cake",
+    "Treats",
+    "Taste"
+  ],
+  "pastries": [
+    "All",
+    "Drinks",
+    "Pastries",
+    "Cakes",
+    "Berry Bliss",
+    "Choco Nap",
+    "Strawberry Tart",
+    "Treats",
+    "Taste"
+  ]
+}

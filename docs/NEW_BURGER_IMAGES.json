@@ -1,0 +1,47 @@
+[
+  {
+    "name": "napoli-burger",
+    "prompt": "Use case: product-mockup. Asset type: premium restaurant menu photograph for Luigi's Pizza. Subject: A Naples-inspired beef cheeseburger in a glossy toasted brioche bun. One thick grilled beef patty, a melted cheddar slice, vivid green basil pesto sauce visibly layered above the patty, a few fresh basil leaves, crisp lettuce and ripe tomato. The green basil sauce should distinguish this burger. Style: realistic studio food photography with natural appetizing texture, gentle highlights and warm accurate colors. Composition: a single whole burger centered on a square canvas, three-quarter front view slightly above eye level, entire bun and fillings visible, about 12 percent clear space around every edge. Soft upper-left studio lighting, sharp food details, consistent catalog style. Genuinely transparent background. No plate, table, props, hands, packaging, typography, logo, or watermark.",
+    "mode": "built-in imagegen",
+    "saved_path": "public/assets/pizza/napoli-burger.png",
+    "sha256": "2cd4f686cbea91f69c4a8868984c5e578dd9aa78ca91aa9232687faa1927417d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "spicy-chicken",
+    "prompt": "Use case: product-mockup. Asset type: premium restaurant menu photograph for Luigi's Pizza. Subject: A spicy crispy chicken burger in a golden glossy brioche bun. One thick irregular crunchy chicken fillet with a visible reddish orange chili glaze, crisp green lettuce, ripe tomato slices and a modest layer of chili sauce. Clearly show the crispy coating and red chili sauce. Style: realistic studio food photography with natural appetizing texture, gentle highlights and warm accurate colors. Composition: a single whole burger centered on a square canvas, three-quarter front view slightly above eye level, entire bun and fillings visible, about 12 percent clear space around every edge. Soft upper-left studio lighting, sharp food details, consistent catalog style. Genuinely transparent background. No plate, table, props, hands, packaging, typography, logo, or watermark.",
+    "mode": "built-in imagegen",
+    "saved_path": "public/assets/pizza/spicy-chicken.png",
+    "sha256": "beb0ede3172a64a47845e3c6655caf6ae25f7062a840a4264b39b452b32d5ff9",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "house-cheeseburger",
+    "prompt": "Use case: product-mockup. Asset type: premium restaurant menu photograph for Luigi's Pizza. Subject: A generous house cheeseburger in a golden sesame bun: grilled beef patty, two melting cheddar slices, glossy golden cheese sauce draping naturally over the patty, crisp green lettuce, tomato slices and sliced pickles. Rich melted cheese is the distinctive feature, appetizing without exaggerated dripping. Style: realistic studio food photography with natural appetizing texture, gentle highlights and warm accurate colors. Composition: a single whole burger centered on a square canvas, three-quarter front view slightly above eye level, entire bun and fillings visible, about 12 percent clear space around every edge. Soft upper-left studio lighting, sharp food details, consistent catalog style. Genuinely transparent background. No plate, table, props, hands, packaging, typography, logo, or watermark.",
+    "mode": "built-in imagegen",
+    "saved_path": "public/assets/pizza/house-cheeseburger.png",
+    "sha256": "1b47178226fbdee38548fa673667a3b4753412b24296c44051d150ee2a4d78da",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ]
+  }
+]

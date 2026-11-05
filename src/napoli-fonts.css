@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/pizza/dm-sans-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/pizza/dm-sans-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/pizza/dm-sans-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/pizza/dm-sans-700.ttf) format('truetype');
+}
+/* The supplied demos replace digits with license notices. Restrict them to
+   letters/punctuation so numeric glyphs fall back to the local body font. */
+@font-face {
+  font-family: 'Groovy Waves';
+  src: url('/assets/fonts/groovy-waves-demo.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-002F, U+003A-007E, U+00A0-024F, U+2000-206F;
+}
+@font-face {
+  font-family: 'Konja';
+  src: url('/assets/fonts/konja.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-002F, U+003A-007E, U+00A0-024F, U+2000-206F;
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "family": "Groovy Waves",
+    "source_archive": "groovy-waves-demo-otf-1792741045-1019.zip",
+    "source_member": "GroovyWavesDemo-G3E1G-Exfont9959.otf",
+    "saved_path": "public/assets/fonts/groovy-waves-demo.otf",
+    "sha256": "db4c5a1a3e765df246c711d261d422b330e3eabac08b57f57efb1ac16297b98b",
+    "license": "License: Free for Personal Use\nLink: https://exfont.com/groovy-waves-demo-otf.font\n"
+  },
+  {
+    "family": "Konja",
+    "source_archive": "konja-otf-1792741164-1019.zip",
+    "source_member": "Konja-R9mZv-Exfontebb8.otf",
+    "saved_path": "public/assets/fonts/konja.otf",
+    "sha256": "203f2e67fb5c0ff59c3bd81e9a4bc0f633bf6aba49b582a193cdd7be0b8d8170",
+    "license": "License: Free for Personal Use\nLink: https://exfont.com/konja-otf.font\n"
+  }
+]

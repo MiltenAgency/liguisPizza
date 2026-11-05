@@ -1,0 +1,37 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# Test artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+coverage/
+
+# Local environment and credentials (keep shareable templates)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local
+/.aws/
+/.codex/
+/.agents/
+
+# Logs and packaged exports
+*.log
+*.zip
+
+# Editor and operating system files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

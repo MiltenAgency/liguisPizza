@@ -1,0 +1,30 @@
+{
+  "mode": "Built-in image_gen tool",
+  "transparent_background": true,
+  "assets": [
+    {
+      "file": "public/assets/pizza/pepperoni.png",
+      "prompt": "Use case: product-mockup. Asset type: transparent cutout hero photograph for a playful premium pizzeria website. Primary request: one whole Neapolitan pepperoni and basil pizza photographed from a three-quarter overhead angle, tilted slightly toward camera so the entire round pizza is visible. Beautiful blistered golden crust, melted mozzarella, rich tomato sauce, curled pepperoni, a few fresh basil leaves. One slice pulled slightly away with a few natural thin cheese strands, appetizing realistic food photography, crisp detail, warm studio lighting. Centered square composition, pizza fills 85% of canvas, all crust within frame. Genuine transparent background, no plate, no board, no table, no hands, no text, no logo, no watermark.",
+      "sha256": "05ca11e79c6be7ca358ac43585508b2e1c0bb7fdb51400622d4aa424b0ba91ab",
+      "bytes": 2958477
+    },
+    {
+      "file": "public/assets/pizza/margherita.png",
+      "prompt": "Use case: product-mockup. Asset type: cutout food photograph for a playful pizzeria website. One whole round Neapolitan Margherita pizza, creamy melted mozzarella, rich red tomato sauce, fresh green basil leaves, blistered golden puffy crust. Three-quarter overhead angle, whole pizza entirely visible, no slice missing. Photorealistic premium food photography, warm soft studio lighting, sharp natural textures. Centered square composition with generous transparent padding, food fills 85% of frame. Genuinely transparent background. No plate, board, hands, table, packaging, letters, logo or watermark.",
+      "sha256": "c014d2a7ef76e68f550147359dbd2251e2b2c9252f6a34449fe4dd84f7768f41",
+      "bytes": 2665598
+    },
+    {
+      "file": "public/assets/pizza/garden.png",
+      "prompt": "Use case: product-mockup. Asset type: cutout food photograph for a playful pizzeria website. One whole round wood-fired vegetarian pizza with roasted mushrooms, red bell peppers, black olive slices, fresh basil, mozzarella and tomato sauce. Rustic blistered golden crust, three-quarter overhead view, entire round pizza visible. Photorealistic premium food photography, warm soft studio lighting, sharp natural textures. Centered square composition with generous transparent padding, food fills 85% of frame. Genuinely transparent background. No plate, board, hands, table, packaging, letters, logo or watermark.",
+      "sha256": "b861ee15f7f52371b50678a004c010f9b2728865c268a9cc3eaed3b30ea43c26",
+      "bytes": 2842056
+    },
+    {
+      "file": "public/assets/pizza/garlic-bread.png",
+      "prompt": "Use case: product-mockup. Asset type: cutout food photograph for a playful pizzeria website. Five golden garlic bread fingers topped with melted mozzarella, garlic butter and parsley, casually stacked in a tidy appetizing pile, three-quarter side view. Crispy golden edges, gooey cheese, realistic texture. Photorealistic premium food photography, warm soft studio lighting, sharp natural textures. Centered square composition with generous transparent padding, food fills 85% of frame. Genuinely transparent background. No plate, board, hands, table, packaging, letters, logo or watermark.",
+      "sha256": "b0adebd68324e611d656b11cb052f490e7bcf116c1982a225631e7f16847fabc",
+      "bytes": 2248462
+    }
+  ]
+}
