@@ -7,8 +7,8 @@
   --blue: #dff2fc;
   --lime: #e4f0e7;
   --yellow: #efc454;
-  --orange: #dc352e;
-  --tomato: #c92c25;
+  --orange: var(--basil);
+  --tomato: var(--basil);
   --basil: #176b4c;
   --heading: "Groovy Waves", "DM Sans", sans-serif;
   font-family: "DM Sans", sans-serif;
@@ -18,18 +18,13 @@ body, .header.cream { background: #fff; }
 h1, h2, h3, .marquee-group > span, .baked-ticker span { font-weight: 400; }
 .hero h1 { line-height: 1.13; letter-spacing: -.035em; }
 .section-heading h2 { line-height: 1.08; letter-spacing: -.025em; }
-.logo { width: 254px; flex-shrink: 0; }
-.brand-mark { flex-direction: row; align-items: center; gap: 10px; }
-.brand-mark > img { width: 82px; height: 68px; flex-shrink: 0; }
-.brand-wordmark { display: flex; flex-direction: column; text-align: left; }
-.brand-wordmark strong { font: 400 31px/.9 Konja, "DM Sans", sans-serif; letter-spacing: 0; color: var(--basil); }
-.brand-mark .brand-wordmark small { padding: 0; margin-top: 5px; font: 700 8px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; white-space: nowrap; }
 .hero:before, .about-hero:before, .contact-hero:before { background: none; }
 .hero-flower .flower-symbol { display: none; }
 .eyebrow { background-image: none !important; background-color: var(--blue); border: 1.5px solid #1379b1; border-radius: 50px; color: #165e87; min-height: 42px; padding: 10px 24px; font-weight: 700; }
 main .section-heading .eyebrow { top: -55px; min-height: 0; height: auto; }
 .scroll-cue { mask: none; border-radius: 50%; background: #fff; border: 2px solid var(--tomato); color: var(--tomato); }
 .button { border-radius: 12px; font-weight: 400; }
+.button:hover { background: #105239; }
 .nav, .button, .eyebrow { font-family: "DM Sans", sans-serif; font-weight: 700; }
 .product-price, .detail-price { font-family: "DM Sans", sans-serif; }
 .dropdown-panel { border-radius: 18px; border: 1px solid #dae7e9; box-shadow: 0 15px 40px #133f5514; }
@@ -61,10 +56,6 @@ footer {
 footer > .container { max-width: 1640px; margin-inline: auto; }
 .footer-main { grid-template-columns: 2fr 1fr 1fr; gap: clamp(40px, 7vw, 150px); }
 .footer-brand { max-width: 500px; }
-.footer-brand > a { width: 320px; max-width: 100%; }
-.footer-brand .brand-mark > img { filter: none; width: 90px; height: 90px; }
-.footer-brand .brand-wordmark strong { color: #fff; font-size: 46px; }
-.footer-brand .brand-wordmark small { font-size: 10px; }
 .footer-brand > p { max-width: 430px; }
 .footer-links h3 { font-size: 20px; font-weight: 500; opacity: 1; }
 .footer-links a { font-size: 18px; }
@@ -77,18 +68,11 @@ footer > .container { max-width: 1640px; margin-inline: auto; }
   .hero-stamp { left: calc(50% - 590px); }
 }
 @media (max-width: 1199px) {
-  .logo { width: 215px; }
-  .brand-mark > img { width: 56px; height: 56px; }
-  .brand-wordmark strong { font-size: 30px; }
-  .brand-mark .brand-wordmark small { font-size: 7px; }
   .nav { gap: 24px; }
   .why-statement:before { inset-inline: -15px; border-radius: 100px; }
   .footer-main { gap: 35px; }
 }
 @media (max-width: 809px) {
-  .logo { width: 210px; }
-  .brand-mark > img { width: 53px; height: 53px; }
-  .brand-wordmark strong { font-size: 29px; }
   .hero h1 { line-height: 1.14; }
   .hero-home h1 { font-size: clamp(31px, 9.2vw, 74px); }
   .eyebrow { min-height: 34px; padding: 7px 18px; }
@@ -103,22 +87,46 @@ footer > .container { max-width: 1640px; margin-inline: auto; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 35px 20px; }
   .footer-brand { grid-column: 1 / -1; max-width: 100%; display: block; }
   .footer-brand > p { margin: 20px 0 26px; }
-  .footer-brand > a { width: 290px; }
-  .footer-brand .brand-mark > img { width: 75px; height: 75px; }
-  .footer-brand .brand-wordmark strong { font-size: 40px; }
-  .footer-brand .brand-wordmark small { font-size: 8px; }
   .footer-links h3 { font-size: 18px; }
   .footer-links a { font-size: 16px; }
 }
-@media (max-width: 359px) {
-  .logo { width: 195px; }
-  .brand-mark { gap: 7px; }
-  .brand-wordmark strong { font-size: 27px; }
-  .footer-brand .brand-wordmark strong { font-size: 35px; }
-  .footer-brand .brand-mark > img { width: 65px; height: 65px; }
+
+.stat-sticker, .stat-sticker.lime, .pizza-404-art > span { font-family: "DM Sans", sans-serif; font-weight: 700; }
+
+/* Preserve the supplied portrait logo in the header and footer. */
+.header { height: 112px; }
+.logo { width: 80px; flex-shrink: 0; }
+.brand-mark { display: block; }
+.brand-mark > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+.footer-brand > a { width: 160px; max-width: 100%; }
+.footer-brand .brand-mark > img { filter: brightness(0) invert(1); }
+@media (max-width: 809px) {
+  .header { height: 80px; }
+  .logo { width: 64px; }
 }
 
-/* Stacked wordmark keeps the full new name readable beside the chef. */
-.brand-wordmark strong > span { display: block; }
-.brand-wordmark strong { text-transform: none; }
-.stat-sticker, .stat-sticker.lime, .pizza-404-art > span { font-family: "DM Sans", sans-serif; font-weight: 700; }
+/* Center the category icon independently of the font's glyph metrics. */
+.category-caption .card-plus > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+.category-caption .card-plus:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Keep playback between the previous and next controls in the same row. */
+.carousel-controls > .motion-pause { position: static; order: 1; }
+.carousel-controls > button:nth-child(2) { order: 2; }

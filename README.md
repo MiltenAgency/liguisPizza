@@ -15,6 +15,10 @@ Open **http://localhost:5173**. If that port is occupied, Vite prints the next a
 
 Internet is required to install dependencies. After installation, all application assets, fonts, images, and menu data load locally. External social and map destinations only open when clicked.
 
+### Visual feedback with Agentation
+
+Agentation is enabled when running `npm run dev`. On desktop, use the toolbar in the bottom-right corner to select an element, add feedback, and copy the annotations into your coding agent. Annotations stay in your browser until you copy them. The toolbar is excluded from production builds.
+
 ## Production build
 
 ```bash

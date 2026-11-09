@@ -6,6 +6,7 @@ import React, {
   useContext,
 } from "react";
 import { createRoot } from "react-dom/client";
+import { Agentation } from "agentation";
 import products from "./products.json";
 import faqs from "./faqs.json";
 import "./styles.css";
@@ -20,7 +21,7 @@ const asset = (name) =>
     ? `/assets/pizza/decor/${name}`
     : `/assets/${name}`;
 const art = {
-  logo: "pizza/napoli-chef.svg",
+  logo: "pizza/luigis-pizza-logo-transparent.png",
   hero: "pizza/pepperoni.png",
   stamp: "pizza/napoli-ticket.svg",
   flower: "pizza/napoli-roundel.svg",
@@ -83,10 +84,11 @@ function Img({ name, alt = "", className = "", eager = false, ...props }) {
   );
 }
 function BrandLogo() {
-  return <span className="brand-mark">
-    <Img name={art.logo} alt="" eager />
-    <span className="brand-wordmark"><strong><span>Luigi’s</span><span>Pizza</span></strong><small>NAPOLI · PIZZA & BURGERS</small></span>
-  </span>;
+  return (
+    <span className="brand-mark">
+      <Img name={art.logo} alt="Luigi’s Pizza" width={1154} height={1363} eager />
+    </span>
+  );
 }
 function Arrow({ direction = "right" }) {
   return (
@@ -624,7 +626,11 @@ function Categories() {
             className="category-caption"
             key={cats[active][0]}
           >
-            <span className="card-plus">+</span>
+            <span className="card-plus" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+            </span>
             <Img name={cats[active][3]} className="category-thumb" />
             <span>
               <strong>{cats[active][0]}</strong>
@@ -1633,6 +1639,7 @@ function App() {
         {page}
       </main>
       <Footer />
+      {import.meta.env.DEV && <Agentation />}
     </Navigation.Provider>
   );
 }
