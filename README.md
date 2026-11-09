@@ -1,6 +1,6 @@
 # Luigi’s Pizza — Napoli Pizza & Burgers
 
-A responsive pizza-kitchen website built with React and Vite. It keeps the layout and animation system developed from the Baristi reference and the supplied recording, with a new pizza theme, menu, artwork, and palette. The four fixed template/Framer promotional buttons have been removed from the application.
+A responsive pizza-kitchen website built with Next.js App Router and React. It keeps the layout and animation system developed from the Baristi reference and the supplied recording, with a new pizza theme, menu, artwork, and palette. The four fixed template/Framer promotional buttons have been removed from the application.
 
 ## Run locally
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open **http://localhost:5173**. If that port is occupied, Vite prints the next available port. Stop your server with `Ctrl+C`.
+Open the Local URL printed by Next.js, normally **http://localhost:3000**. If the default port is occupied, Next.js chooses another available port. To choose one explicitly, use `npm run dev -- --port 5174`. Stop your server with `Ctrl+C`.
 
 Internet is required to install dependencies. After installation, all application assets, fonts, images, and menu data load locally. External social and map destinations only open when clicked.
 
@@ -26,13 +26,17 @@ npm run build
 npm run preview
 ```
 
-Open **http://localhost:4173**. A static host serving `dist/` must fall back to `index.html` for direct page URLs. Opening the source HTML with `file://` is not supported.
+Open **http://localhost:4173**. `npm run start` also starts the production server. Deploy to a Next.js-compatible host or run the build with Node.js; the output is in `.next/`. The old Vite `dist/` output is no longer used.
+
+## Routing
+
+Next.js owns navigation through `next/link` and `next/navigation`. The shared root layout provides the header, footer, fonts, and styles. Home and About are prerendered; product pages are generated from the local product data. Menu and Contact render query parameters on the server so category filters and order subjects work on direct visits and through browser history. Unknown routes use the custom Next.js 404.
 
 ## Napoli theme
 
-- White background with tomato red, basil green, Napoli blue, and gold accents.
-- Original green line-art pizza-maker logo inspired by the supplied reference.
-- Locally hosted Groovy Waves headings, Konja logo lettering, and DM Sans body text/numbers, new arch/oval shapes, and a full-width footer.
+- White background with basil green, Napoli blue, and gold accents.
+- Supplied Luigi’s Pizza logo with a transparent background, green in the header and white in the footer.
+- Locally hosted Groovy Waves headings and DM Sans body text/numbers, arch/oval shapes, and a full-width footer.
 - New transparent pizza and garlic-bread artwork, plus local pizza-kitchen photography.
 - Home, About, Contact, Menu, product pages, and a pizza-themed 404.
 - Eleven sample products: four pizzas, two sides, and five burgers.
@@ -40,7 +44,7 @@ Open **http://localhost:4173**. A static host serving `dist/` must fall back to 
 - Menu filters, Load More, hover/mobile navigation, keyboard controls, FAQ, and order-enquiry subject prefilling.
 - No Get It For Free, See More Templates, Customization Service, or Made in Framer widget.
 
-The `baristi-local` folder name is retained so existing local commands keep working. Old product URLs such as `/menu/berry-bliss` remain aliases for the corresponding pizza-theme product.
+The `baristi-local` folder name is retained so existing local commands keep working. Old product URLs such as `/menu/berry-bliss` permanently redirect to the corresponding pizza product.
 
 ## Pages and content
 
@@ -50,7 +54,7 @@ Product routes: `/menu/margherita`, `/menu/pepperoni`, `/menu/garden-pizza`, `/m
 
 Menu query links use `?category=pizzas`, `?category=sides`, or `?category=burgers`.
 
-Edit products in `src/products.json`, FAQs in `src/faqs.json`, components/copy in `src/main.jsx`, and the current identity styling in `src/napoli-theme.css` and `src/napoli-fonts.css` (which override the earlier `src/pizza-theme.css`). Shared responsive styling is in `src/styles.css` and `src/video-match.css`; scroll motion is in `src/motion.js`.
+Edit products in `src/products.json`, FAQs in `src/faqs.json`, interactive components/copy in `src/site.jsx` and route files/metadata in `src/app/`, and the current identity styling in `src/napoli-theme.css` and `src/napoli-fonts.css` (which override the earlier `src/pizza-theme.css`). Shared responsive styling is in `src/styles.css` and `src/video-match.css`; scroll motion is in `src/motion.js`.
 
 ## Backend boundaries
 
@@ -67,6 +71,8 @@ npm test
 
 Tests use `/usr/bin/chromium` when available, otherwise Playwright Chromium. A custom executable can be supplied with `CHROMIUM_PATH`. Tests cover routes, promo removal, categories, history, navigation, forms, carousel motion, reduced motion, local image loading, and layouts from 320 to 1880 pixels.
 
+To test the production build on a separate port, run `npm run build` followed by `PLAYWRIGHT_PORT=5180 PLAYWRIGHT_PRODUCTION=1 npm test`. Additional routing checks verify server-rendered pages without JavaScript, query parameters, HTTP 404 responses, and legacy product redirects.
+
 See [verification](docs/VERIFICATION.md) and the [Napoli theme notes](docs/NAPOLI_THEME.md).
 
 ## Supplied fonts
@@ -75,13 +81,13 @@ The Groovy Waves Demo and Konja OTF files supplied by the user are included unde
 
 ## Images and credits
 
-New cutout artwork was generated with the built-in image generation tool. Burger paths and exact prompts are in [BURGER_GENERATION.json](docs/BURGER_GENERATION.json); the new logo and decorative SVGs are native vector artwork. Final paths and exact prompts are in [PIZZA_GENERATION.json](docs/PIZZA_GENERATION.json). Pizza photography sources and hashes are in [PIZZA_PHOTO_SOURCES.json](docs/PIZZA_PHOTO_SOURCES.json).
+New cutout artwork was generated with the built-in image generation tool. Burger paths and exact prompts are in [BURGER_GENERATION.json](docs/BURGER_GENERATION.json); the transparent logo is a bitmap asset derived from the supplied logo, and decorative SVGs are native vector artwork. Final paths and exact prompts are in [PIZZA_GENERATION.json](docs/PIZZA_GENERATION.json). Pizza photography sources and hashes are in [PIZZA_PHOTO_SOURCES.json](docs/PIZZA_PHOTO_SOURCES.json).
 
 Earlier open-source font sources are in [NAPOLI_FONT_SOURCES.json](docs/NAPOLI_FONT_SOURCES.json), with their OFL licenses in `docs/FONT_LICENSE_*.txt`. Original reference assets and fonts are retained, with provenance in [ASSET_SOURCES.json](docs/ASSET_SOURCES.json) and font licenses under `docs/licenses/`. Recolored SVG decorations are separate copies under `public/assets/pizza/decor/`. The original visual design is attributable to RedDevs and the respective asset owners; this local customization does not transfer rights to the original third-party assets.
 
 ## ZIP
 
-The updated `baristi-local.zip` is beside the project folder. Regenerate it with Python 3:
+Create a source archive with Python 3:
 
 ```bash
 npm run package

@@ -1,19 +1,15 @@
+"use client";
+
 import React, {
   useState,
   useEffect,
   useRef,
-  createContext,
-  useContext,
 } from "react";
-import { createRoot } from "react-dom/client";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { Agentation } from "agentation";
 import products from "./products.json";
 import faqs from "./faqs.json";
-import "./styles.css";
-import "./video-match.css";
-import "./pizza-theme.css";
-import "./napoli-fonts.css";
-import "./napoli-theme.css";
 import { usePageMotion } from "./motion.js";
 
 const asset = (name) =>
@@ -43,34 +39,6 @@ const categories = [
   ["pizzas", "Pizzas", "pizza/margherita.png"],
   ["sides", "Sides", "pizza/garlic-bread.png"],
 ];
-const Navigation = createContext(null);
-function Link({ href, children, onClick, ...props }) {
-  const { navigate } = useContext(Navigation);
-  return (
-    <a
-      href={href}
-      {...props}
-      onClick={(e) => {
-        onClick?.(e);
-        if (
-          !e.defaultPrevented &&
-          !e.metaKey &&
-          !e.ctrlKey &&
-          !e.shiftKey &&
-          !e.altKey &&
-          e.button === 0 &&
-          href?.startsWith("/") &&
-          props.target !== "_blank"
-        ) {
-          e.preventDefault();
-          navigate(href);
-        }
-      }}
-    >
-      {children}
-    </a>
-  );
-}
 function Img({ name, alt = "", className = "", eager = false, ...props }) {
   return (
     <img
@@ -144,11 +112,11 @@ function Header({ cream = false }) {
   const ref = useRef(null),
     trigger = useRef(null),
     essentials = useRef(null);
-  const { location } = useContext(Navigation);
+  const pathname = usePathname();
   useEffect(() => {
     setOpen(false);
     setDropdown(false);
-  }, [location]);
+  }, [pathname]);
   useEffect(() => {
     const dismiss = (e) => {
       if (!ref.current?.contains(e.target)) {
@@ -197,13 +165,13 @@ function Header({ cream = false }) {
         >
           <Link
             href="/"
-            aria-current={location.pathname === "/" ? "page" : undefined}
+            aria-current={pathname === "/" ? "page" : undefined}
           >
             Home
           </Link>
           <Link
             href="/about"
-            aria-current={location.pathname === "/about" ? "page" : undefined}
+            aria-current={pathname === "/about" ? "page" : undefined}
           >
             About
           </Link>
@@ -245,7 +213,7 @@ function Header({ cream = false }) {
           </div>
           <Link
             href="/contact"
-            aria-current={location.pathname === "/contact" ? "page" : undefined}
+            aria-current={pathname === "/contact" ? "page" : undefined}
           >
             Contact
           </Link>
@@ -1255,9 +1223,8 @@ function About() {
     </>
   );
 }
-function Shop() {
-  const { location, navigate } = useContext(Navigation);
-  const requested = new URLSearchParams(location.search).get("category");
+function Shop({ requestedCategory: requested }) {
+  const router = useRouter();
   const category = categories.some((c) => c[0] === requested)
     ? requested
     : "all";
@@ -1282,9 +1249,9 @@ function Shop() {
               aria-pressed={category === id}
               onClick={() => {
                 setLimit(9);
-                navigate(
+                router.push(
                   id === "all" ? "/menu" : `/menu?category=${id}`,
-                  false,
+                  { scroll: false },
                 );
               }}
             >
@@ -1388,12 +1355,9 @@ function Product({ product }) {
     </>
   );
 }
-function Contact() {
-  const { location } = useContext(Navigation);
+function Contact({ productSlug }) {
   const selected = products.find((p) =>
-    [p.slug, p.legacySlug].includes(
-      new URLSearchParams(location.search).get("product"),
-    ),
+    [p.slug, p.legacySlug].includes(productSlug),
   );
   const [status, setStatus] = useState("");
   return (
@@ -1565,83 +1529,22 @@ function NotFound() {
     </section>
   );
 }
-function App() {
-  const [location, setLocation] = useState({
-    pathname: window.location.pathname,
-    search: window.location.search,
-    hash: window.location.hash,
-  });
-  const main = useRef(null);
-  usePageMotion(location.pathname);
-  const readLocation = () => ({
-    pathname: window.location.pathname.replace(/\/$/, "") || "/",
-    search: window.location.search,
-    hash: window.location.hash,
-  });
-  const navigate = (url, scroll = true) => {
-    const target = new URL(url, window.location.origin);
-    history.pushState({}, "", target);
-    setLocation(readLocation());
-    if (scroll && !target.hash)
-      window.scrollTo({ top: 0, behavior: "instant" });
-  };
-  useEffect(() => {
-    const pop = () => setLocation(readLocation());
-    window.addEventListener("popstate", pop);
-    return () => window.removeEventListener("popstate", pop);
-  }, []);
-  useEffect(() => {
-    if (location.hash) {
-      requestAnimationFrame(() =>
-        document
-          .getElementById(location.hash.slice(1))
-          ?.scrollIntoView({ behavior: "instant" }),
-      );
-    }
-  }, [location]);
-  const path = location.pathname.replace(/\/$/, "") || "/";
-  const product = products.find(
-    (p) => path === `/menu/${p.slug}` || path === `/menu/${p.legacySlug}`,
-  );
-  useEffect(() => {
-    const title =
-      product?.name ||
-      {
-        "/": "Good times, great pizza",
-        "/about": "About us",
-        "/menu": "Our menu",
-        "/contact": "Contact us",
-      }[path] ||
-      "Page not found";
-    document.title = `${title} — Luigi’s Pizza`;
-  }, [path, product]);
-  let page =
-    path === "/" ? (
-      <Home />
-    ) : path === "/about" ? (
-      <About />
-    ) : path === "/menu" ? (
-      <Shop />
-    ) : path === "/contact" ? (
-      <Contact />
-    ) : product ? (
-      <Product product={product} />
-    ) : (
-      <NotFound />
-    );
+function SiteShell({ children }) {
+  const pathname = usePathname();
+  usePageMotion(pathname);
   return (
-    <Navigation.Provider value={{ location, navigate }}>
+    <>
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
-      <Header cream={!!product} />
-      <main id="main-content" ref={main} key={path}>
-        {page}
+      <Header cream={pathname.startsWith("/menu/")} />
+      <main id="main-content" key={pathname}>
+        {children}
       </main>
       <Footer />
-      {import.meta.env.DEV && <Agentation />}
-    </Navigation.Provider>
+      {process.env.NODE_ENV === "development" && <Agentation />}
+    </>
   );
 }
 
-createRoot(document.getElementById("root")).render(<App />);
+export { SiteShell, Home, About, Shop, Contact, Product, NotFound };

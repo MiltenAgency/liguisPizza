@@ -197,13 +197,14 @@ test("carousel moves and reduced motion disables animations", async ({
 
 test("assets are local, all displayed images load, and layouts stay within viewport", async ({
   page,
+  baseURL,
 }) => {
   test.setTimeout(60_000); // Six page templates across six viewport sizes.
   const remote = [];
   page.on("request", (r) => {
     if (
       /^https?:/.test(r.url()) &&
-      !r.url().startsWith("http://127.0.0.1:5173")
+      !r.url().startsWith(baseURL)
     )
       remote.push(r.url());
   });

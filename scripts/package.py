@@ -5,7 +5,7 @@ import zipfile
 
 root = Path(__file__).resolve().parents[1]
 archive = root.parent / f"{root.name}.zip"
-excluded = {"node_modules", "dist", "research", "test-results", "playwright-report", ".git", ".codex", ".agents", "__pycache__"}
+excluded = {"node_modules", "dist", ".next", "out", "research", "test-results", "playwright-report", ".git", ".codex", ".agents", "__pycache__"}
 files = sorted(
     p for p in root.rglob("*")
     if p.is_file()
